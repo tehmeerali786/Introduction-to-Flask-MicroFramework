@@ -1,5 +1,6 @@
 
 {% extends "base.html" %}
+{% from "form_marcos.html" import render_field %}
 
 {% block title %}
 Thermos - Add a URl
@@ -9,17 +10,28 @@ Thermos - Add a URl
 
 <section>
 
+	<h1> Add a new URL </h1>
 	<form action="" method="post">
 		
-		<p> 
-			Please enter your bookmark here:
-			<input type="text" name="url">
+		{{ form.hidden_tag() }}
 
-		</p>
+		<table>
+			
+			{{ render_field(form.url, size=50) }}
+			{{ render_field(form.description, size=50) }}
 
-		<p>
-			<button type="submit">Submit</button>
-		</p>
+
+
+			<tr>
+				<td></td>
+				<td><button type="submit">Submit</button> </td>
+
+			</tr>
+
+
+
+
+		</table>
 
 
 	</form>

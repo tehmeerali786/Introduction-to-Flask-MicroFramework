@@ -180,10 +180,37 @@ h1, h2, h3, h4, h5, h6 {
         color: white;
     }
     
+/* flashes styling  */
 
+.flashes ul {
 
+    margin: 0 0;
+    background: #FFD6A3;
+    color: #000;
+}
 
+.flashes ul {
 
+    background: #FFD6A3;
+    color: #000;
+}
+
+article.flashes {
+
+    margin-bottom: 1em;
+}
+
+.error, .error input {
+    color: red;
+}
+
+tr.submit button {
+    margin-top: 20px;
+}
+
+input, button {
+    margin-left: 10px;
+}
 
 
 
