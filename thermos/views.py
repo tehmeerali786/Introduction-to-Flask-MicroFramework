@@ -68,7 +68,8 @@ def signup():
         db.session.commit()
         flash('Welcome, {}! Please login.'.format(user.username))
         return redirect(url_for('login'))
-    return render_template("signup.html", form=form)
+    else:
+        return render_template("signup.html", form=form)
 
 
 @app.errorhandler(404)
